@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="Alien" class="com.mayur.telusko.SpringCore.Alien">
+<property name="age" value="10"></property>
+<property name="laptop" ref="Laptop"></property>
+</bean>
+
+<bean id="Alien1" class="com.mayur.telusko.SpringCore.Alien">
+<constructor-arg value="12"></constructor-arg>
+<property name="laptop" ref="Laptop"></property>
+</bean>
+
+
+<bean id="Laptop" class="com.mayur.telusko.SpringCore.Laptop">
+
+</bean>
+</beans>
